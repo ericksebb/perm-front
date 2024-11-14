@@ -1,1 +1,10 @@
-<p>circular-permutation works!</p>
+<nz-input-group nzPrefixIcon="number">
+    <input nz-input [(ngModel)]="n" placeholder="Enter value for n" type="number" />
+  </nz-input-group>
+  
+  <button nz-button nzType="primary" (click)="calculateCircularPermutation()">Calculate Circular Permutation</button>
+  
+  <div>
+    <p>Circular Permutation: {{ result }}</p>
+  </div>
+  

@@ -1,1 +1,14 @@
-<p>linear-permutation works!</p>
+<nz-input-group nzPrefixIcon="number">
+    <input nz-input [(ngModel)]="n" placeholder="Enter value for n" type="number" />
+  </nz-input-group>
+  
+  <nz-input-group nzPrefixIcon="number">
+    <input nz-input [(ngModel)]="r" placeholder="Enter value for r" type="number" />
+  </nz-input-group>
+  
+  <button nz-button nzType="primary" (click)="calculateLinearPermutation()">Calculate Linear Permutation</button>
+  
+  <div>
+    <p>Linear Permutation: {{ result }}</p>
+  </div>
+  

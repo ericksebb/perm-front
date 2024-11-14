@@ -1,1 +1,13 @@
-<p>repetition-permutation works!</p>
+<nz-input-group nzPrefixIcon="number">
+    <input nz-input [(ngModel)]="n" placeholder="Ingresar el valor de n" type="number" />
+</nz-input-group>
+
+<nz-input-group nzPrefixIcon="edit">
+    <input nz-input [(ngModel)]="counts" placeholder="Ingresar los conteos separado por comas" type="text" />
+</nz-input-group>
+
+<button nz-button nzType="primary" (click)="calculateRepetitionPermutation()">Calculate Repetition Permutation</button>
+
+<div>
+    <p>Repetition Permutation: {{ result }}</p>
+</div>
