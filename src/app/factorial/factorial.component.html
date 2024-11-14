@@ -1,0 +1,9 @@
+<nz-input-group nzPrefixIcon="number">
+    <input nz-input [(ngModel)]="number" placeholder="Enter a number" type="number" />
+  </nz-input-group>
+  <button nz-button nzType="primary" (click)="calculateFactorial()">Calculate Factorial</button>
+  
+  <div>
+    <p>Factorial: {{ result }}</p>
+  </div>
+  
